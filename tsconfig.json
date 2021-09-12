@@ -1,0 +1,64 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        // "target": "ESNext",
+        "module": "esnext"
+        // "module": "commonjs"
+        // "lib": [
+        //     "es2015",
+        //     "es2016",
+        //     "es2017",
+        //     "es2018",
+        //     "es2019",
+        //     "es2020",
+        //     "esnext",
+        //     "dom",
+        //     // "webworker",
+        //     "scripthost"
+        // ],
+        // "moduleResolution": "node",
+        // "removeComments": true,
+        // "experimentalDecorators": true,
+        // "noImplicitAny": false,
+        // "noImplicitOverride": true,
+        // "noImplicitReturns": true,
+        // "allowJs": true,
+        // "checkJs": false,
+        // "sourceMap": true
+        // "allowSyntheticDefaultImports": true,
+        // "esModuleInterop": true,
+        // "allowUnusedLabels": true
+        // "baseUrl": ".", // This must be specified if "paths" is.
+        // "paths": {
+        //     // This mapping is relative to "baseUrl"
+        //     // "bootstrap": [
+        //     //     "./node_modules/bootstrap"
+        //     // ],
+        //     "@popperjs/core": [
+        //         "./node_modules/@popperjs/core"
+        //     ],
+        //     "cesium": [
+        //         "./node_modules/cesium/Build/Cesium/*",
+        //         "./node_modules/cesium/Build/CesiumUnminified/*"
+        //     ],
+        //     "scripts/*": [
+        //         "./src/build/scripts/*"
+        //     ]
+        // }
+    },
+    "include": [
+        // "node_modules/@types",
+        // "node_modules/cesium/Build/Cesium/Cesium.js",
+        // "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+        "src/build/scripts/js/*",
+        "src/build/scripts/ts/*",
+        // "src/gulpfile.js",
+        "tests"
+    ],
+    "exclude": [
+        // "node_modules/**/*",
+        // "public/js/**/*"
+        "node_modules",
+        "public"
+    ]
+}
