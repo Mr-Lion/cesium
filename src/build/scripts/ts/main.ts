@@ -1,5 +1,5 @@
-import * as bootstrap from 'bootstrap';
-import * as Cesium from 'cesium';
+// import * as bootstrap from 'bootstrap';
+// import * as Cesium from 'cesium';
 
 let map: Cesium.Viewer = undefined;
 
@@ -61,35 +61,35 @@ const createTheMap = () => {
 createTheMap();
 
 if (map !== undefined) {
-    var wyoming = map.entities.add({
-        name: 'Wyoming',
-        polygon: {
-            hierarchy: Cesium.Cartesian3.fromDegreesArray([
-                -109.080842, 45.002073,
-                -105.91517, 45.002073,
-                -104.058488, 44.996596,
-                -104.053011, 43.002989,
-                -104.053011, 41.003906,
-                -105.728954, 40.998429,
-                -107.919731, 41.003906,
-                -109.04798, 40.998429,
-                -111.047063, 40.998429,
-                -111.047063, 42.000709,
-                -111.047063, 44.476286,
-                -111.05254, 45.002073]),
-            height: 0,
-            material: Cesium.Color.RED.withAlpha(0.5),
-            outline: true,
-            outlineColor: Cesium.Color.BLACK
-        }
-    });
+    // var wyoming = map.entities.add({
+    //     name: 'Wyoming',
+    //     polygon: {
+    //         hierarchy: Cesium.Cartesian3.fromDegreesArray([
+    //             -109.080842, 45.002073,
+    //             -105.91517, 45.002073,
+    //             -104.058488, 44.996596,
+    //             -104.053011, 43.002989,
+    //             -104.053011, 41.003906,
+    //             -105.728954, 40.998429,
+    //             -107.919731, 41.003906,
+    //             -109.04798, 40.998429,
+    //             -111.047063, 40.998429,
+    //             -111.047063, 42.000709,
+    //             -111.047063, 44.476286,
+    //             -111.05254, 45.002073]),
+    //         height: 0,
+    //         material: Cesium.Color.RED.withAlpha(0.5),
+    //         outline: true,
+    //         outlineColor: Cesium.Color.BLACK
+    //     }
+    // });
 
     // map.zoomTo(wyoming);
     // Add Cesium OSM Buildings, a global 3D buildings layer.
 
-    const buildingTileset = map.scene.primitives.add(
-        Cesium.createOsmBuildings()
-    );
+    // const buildingTileset = map.scene.primitives.add(
+    //     Cesium.createOsmBuildings()
+    // );
 
     // Fly the camera to San Francisco at the given longitude, latitude, and height.
 
