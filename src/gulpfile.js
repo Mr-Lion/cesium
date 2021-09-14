@@ -97,7 +97,6 @@ const compileScript = (done) => {
                         // basedir: './'
                     })
                     .bundle()
-                    // .on('error', gutil.log)
                     .pipe(source(entry))
                     .pipe(rename(function (file) {
                         // Select Modul-Name
@@ -195,7 +194,7 @@ const compileStyle = (done) => {
         // Write sourcemap
         .pipe(gulpIf(
             mode === 'development',
-            sourcemaps.write('.', { addComment: true })
+            sourcemaps.write('./', { addComment: true })
         ))
         // Write everything to destination folder
         .pipe(gulp.dest(`${route.outputDir}${path.sep}css`))
@@ -213,14 +212,8 @@ const build = gulp.series(
     buildContentTasks
 );
 
-const dev = gulp.series(
-    cleanOutputDir,
-    buildContentTasks,
-);
-
 console.log(mode);
 
-exports.dev = dev;
 exports.build = build;
 exports.default = build;
 
